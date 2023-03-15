@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- HEADER -->
+    <!------------------------- HEADER ----------------------------------------------------->
     <header class="header">
         <div class="header-navigation-container container">
         <nav class="header-navigation">
@@ -21,13 +21,13 @@
                 <span class="accent">Web</span>Studio</a> 
             <ul class="header-list list">
                 <li class="header-item">
-                    <a href="./index.html" class="header-link">Studio</a>
+                    <a href="./index.html" class="header-link link curent">Studio</a>
                 </li>
                 <li class="header-item">
-                    <a href="./portfolio.html" class="header-link">Portfolio</a>
+                    <a href="./portfolio.html" class="header-link link">Portfolio</a>
                 </li>    
                 <li class="header-item">
-                    <a href="Contacts" class="header-link">Contacts</a>
+                    <a href="Contacts" class="header-link link">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -43,11 +43,12 @@
         </address>
         </div> 
     </header>
+    <!-------------------------- Main ---------------------------------------------------------->
     <main class="main-page">
         <section class="hero-section section">
             <div class="container">
             <h1 class="menu-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="menu-btn">Order Service</button>
+            <button type="button" data-modal-open class="menu-btn data-modal-open">Order Service</button>
             </div>
         </section> 
         <section class="menu-sc section">
@@ -338,6 +339,7 @@
             </div>
         </section>
     </main>
+    <!-- -----------------------Footer----------------------------------------------------->
     <footer class="footer">
         <div class="container-footer-index container">
             <div class="container-footer">
@@ -380,14 +382,16 @@
             </div>
         </div>
     </footer>
-    <div class="data-modal">
-        <div class="data-modal-open">
-            <button class="data-modal-close" type="button">
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="modal-close">
                 <svg width="8px" height="8px">
                     <use href="./images/modal-close.svg#icon-modal-close"></use>
                 </svg>
             </button>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
